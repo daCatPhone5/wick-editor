@@ -1,341 +1,168 @@
-/*
- * Copyright 2020 WICKLETS LLC
- *
- * This file is part of Wick Editor.
- *
- * Wick Editor is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * Wick Editor is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Wick Editor.  If not, see <https://www.gnu.org/licenses/>.
- */
-
-// Define Color Scheme
-
-// Spring 2019 color scheme
-$editor-primary: #303030;
-$editor-primary-text: white; //#AFAFAF;
-$editor-primary-property-text: $editor-primary-text;
-$editor-primary-outline: #191919;
-
-$editor-text-input-background: #4F4F4F;
-$editor-text-input-text: #000000;
-
-$editor-menubar-project-text: #FFFFFF; //#DADADA;
-$editor-menubar-option-text: #E0E0E0; //#BABABA;
-
-$editor-secondary: #3B3B3B;
-$editor-secondary-text: #BDBDBD; //#797979;
-
-$editor-tertiary: #4A4A4A;
-
-$editor-modal-dark: #1E1E1E;
-$editor-modal-gray: #383434; //#3D3B3B;
-$editor-modal-gray-secondary: #525252;
-
-$editor-modal-text-white: #FFFFFF;
-$editor-modal-text-gray: #E6E6E6;
-$editor-modal-text-dark: #a6a6a6;
-$editor-modal-text-highlight: #1EE29A;
-
-$editor-green-highlight: #1EE29A;
-$editor-green-highlight-dark: #19C284;
-
-$editor-canvas-border: #6A6A6A;
-
-$editor-outline-padding: 4px;
-$editor-input-border-width: 3px;
-$editor-panel-padding: 10px;
-
-$editor-popout-primary: #292927;
-$editor-popout-secondary: #353434;
-$editor-popout-tertiary: #3F3D3D;
-
-$editor-popout-primary-text: #FFFFFF;
-$editor-popout-secondary-text: #B1B1B1;
-$editor-popout-tertiary-text: #919191;
-
-// Default palette
-$heather-grey: #F5F5F5;
-$heather-grey-light: #F9F9F9;
-$heather-grey-dark: #EAEAEA;
-$heather-grey-text: black;
-
-$wick-green: #1EE29A;
-$wick-green-light: #29F1A3;
-$wick-green-dark: #01C094;
-$wick-green-text: $editor-primary;
-
-$sleepy-sky: #B4ECE6;
-$sleepy-sky-light: #D3F8F4;
-$sleepy-sky-dark: #8DDED6;
-$sleepy-sky-text: black;
-
-$wick-active-blue: #00ADEF;
-$wick-active-blue-dark: #00709c;
-$wick-active-blue-light: #00B9FF;
-$wick-active-blue-text: $editor-primary;
-
-$deep-cereulian: #101DA5;
-$deep-cereulian-light: #2636E1;
-$deep-cereulian-dark: #010A6F;
-$deep-cereulian-text: white;
-
-$old-navy: #08105B;
-$old-navy-light: #182387;
-$old-navy-dark: #000640;
-$old-navy-text: white;
-
-$magenta: #CB00E4;
-$magenta-light: #E233F7;
-$magenta-dark: #B800CF;
-$magenta-text: white;
-
-$flame: #F66A37;
-$flame-light: #FF7848;
-$flame-dark: #E6460E;
-$flame-text: black;
-
-$wick-red: #F86868; //#FD384C;
-$wick-red-light: #FF8C8C; //#FF5372;
-$wick-red-dark: #E61E07;
-$wick-red-text: black;
-
-$wick-yellow: #FFC835;
-$wick-yellow-light: #FFE243;
-$wick-yellow-dark: #E9AA02;
-$wick-yellow-text: black;
-
-$wick-gray: #4F4F4F;
-$wick-gray-light: #575757;//#5D5D5D;
-$wick-gray-dark: #424242;
-$wick-gray-text: #ffffff;//#848484;
-$wick-gray-text-light: #b6b6b6;
-
-$wick-cool-blue: #89919C;
-$wick-cool-blue-light: #AFD6FF;
-$wick-cool-blue-dark:#5C5F65;
-$wick-cool-blue-text: #353434;
-
-$wick-error-red: #E27663;
-$wick-error-red-light: #FF7867;
-$wick-error-red-dark: #8D564D;
-$wick-error-red-text: #FF7867;
-
-// interface palette
-$interface-primary: #464646; // most background colors
-$interface-primary-text: #FFFFFF; // most text
-
-$interface-secondary: #535353; // interface title headers, some backgrounds
-$interface-secondary-text: #ADADAD; // some text
-
-$interface-tertiary: #919191; // search bars
-$interface-tertiary-text: #626262; // search text
-
-$interface-quaternary: #C4C4C4; // interface background highlights
-
-$interface-input-background: #FFFFFF;
-$interface-input-text: #535353;
-
+/* Intentionally ugly Android-editor color theme. */
+$editor-primary: #121212;
+$editor-primary-text: #ffe600;
+$editor-primary-property-text: #ff7b00;
+$editor-primary-outline: #ff0055;
+$editor-text-input-background: #ff9f1c;
+$editor-text-input-text: #111;
+$editor-menubar-project-text: #fff;
+$editor-menubar-option-text: #ffe600;
+$editor-secondary: #ff4d00;
+$editor-secondary-text: #fff7b3;
+$editor-tertiary: #00d1ff;
+$editor-modal-dark: #1d1d1d;
+$editor-modal-gray: #3a2f00;
+$editor-modal-gray-secondary: #5c4a00;
+$editor-modal-text-white: #fff;
+$editor-modal-text-gray: #ffe7a3;
+$editor-modal-text-dark: #ffd442;
+$editor-modal-text-highlight: #00ff88;
+$editor-green-highlight: #00ff88;
+$editor-green-highlight-dark: #00b560;
+$editor-canvas-border: #ff7b00;
+$editor-outline-padding: 6px;
+$editor-input-border-width: 5px;
+$editor-panel-padding: 14px;
+$editor-popout-primary: #2f1d00;
+$editor-popout-secondary: #5a2b00;
+$editor-popout-tertiary: #7d3300;
+$editor-popout-primary-text: #fff9d6;
+$editor-popout-secondary-text: #ffb86b;
+$editor-popout-tertiary-text: #ffe2a8;
+$heather-grey: #f9f5e9;
+$heather-grey-light: #fff7d5;
+$heather-grey-dark: #f7d97d;
+$heather-grey-text: #111;
+$wick-green: #00ff88;
+$wick-green-light: #7dffbe;
+$wick-green-dark: #00b560;
+$wick-green-text: #111;
+$sleepy-sky: #8ef3ff;
+$sleepy-sky-light: #d9ffff;
+$sleepy-sky-dark: #38d7ff;
+$sleepy-sky-text: #111;
+$wick-active-blue: #00d1ff;
+$wick-active-blue-dark: #0096c7;
+$wick-active-blue-light: #8ce8ff;
+$wick-active-blue-text: #111;
+$deep-cereulian: #1d2bff;
+$deep-cereulian-light: #5261ff;
+$deep-cereulian-dark: #101ad5;
+$deep-cereulian-text: #fff;
+$old-navy: #3a0d6d;
+$old-navy-light: #5f2ad9;
+$old-navy-dark: #26084f;
+$old-navy-text: #fff;
+$magenta: #ff00d6;
+$magenta-light: #ff62ec;
+$magenta-dark: #cc00a7;
+$magenta-text: #fff;
+$flame: #ff6f00;
+$flame-light: #ff9f43;
+$flame-dark: #d94d00;
+$flame-text: #111;
+$wick-red: #ff3b30;
+$wick-red-light: #ff7e6a;
+$wick-red-dark: #d62818;
+$wick-red-text: #111;
+$wick-yellow: #ffe600;
+$wick-yellow-light: #fff67a;
+$wick-yellow-dark: #e1c100;
+$wick-yellow-text: #111;
+$wick-gray: #4b4b4b;
+$wick-gray-light: #6a6a6a;
+$wick-gray-dark: #2a2a2a;
+$wick-gray-text: #fff;
+$wick-gray-text-light: #f5d68d;
+$wick-cool-blue: #7d9cff;
+$wick-cool-blue-light: #c4d2ff;
+$wick-cool-blue-dark: #465bba;
+$wick-cool-blue-text: #111;
+$wick-error-red: #ff5a36;
+$wick-error-red-light: #ff8f6d;
+$wick-error-red-dark: #c42d13;
+$wick-error-red-text: #fff;
+$interface-primary: #2b2b2b;
+$interface-primary-text: #ffeb3b;
+$interface-secondary: #ff7b00;
+$interface-secondary-text: #fff4cc;
+$interface-tertiary: #00c2ff;
+$interface-tertiary-text: #0d1632;
+$interface-quaternary: #ffd166;
+$interface-input-background: #fff7b3;
+$interface-input-text: #141414;
 $interface-selection: $wick-green-dark;
-$interface-hover: $wick-green;
+$interface-hover: $wick-yellow;
 $interface-highlight: $wick-green-light;
-
 $interface-tooltip: $sleepy-sky;
 $interface-tooltip-dark: $sleepy-sky-dark;
 $interface-tooltip-light: $sleepy-sky-light;
-
-$interface-tooltip-text: #222222;
-
+$interface-tooltip-text: #111;
 $interface-spotlight: $magenta;
 $interface-spotlight-dark: $magenta-dark;
 $interface-spotlight-light: $magenta-light;
-
-$interface-spotlight-text: #FFFFFF;
-
-
+$interface-spotlight-text: #fff;
 $interface-warning: $flame;
 $interface-warning-dark: $flame-dark;
 $interface-warning-light: $flame-light;
+$interface-warning-text: #111;
+$interface-menu-bar-background: #0d0d0d;
+$focus-orange: #ff8f1f;
+$patreon-orange: #ff6d00;
+$patreon-text: #111;
+$github-pink: #ff4ad8;
+$github-button: #ffe600;
+$github-text: #111;
+$mobile-panel-background: #1f1f1f;
+$timeline-red: #ff5c5c;
+$inspector-teal: #00ffe7;
+$code-pink: #ff57d8;
+$asset-green: #d1ff7a;
+$inspector-tab-background: #2d2d2d;
+$inspector-tab-background-selected: #3d3d3d;
+$inspector-tab-underline: #ff4800;
 
-$interface-warning-text: #FFFFFF;
+a:link, a { color: $editor-green-highlight; }
+a:hover { color: $editor-green-highlight-dark; }
 
-$interface-menu-bar-background: black;
+.ReactModal__Overlay { opacity: 0; transition: opacity .5s ease-in-out; }
+.ReactModal__Overlay--after-open { opacity: 1; }
+.ReactModal__Overlay--before-close { opacity: 0; }
 
-$focus-orange: #FF7867;
-
-// support us colors
-$patreon-orange: #E85B46;
-$patreon-text: white;
-$github-pink: #EC6CB9;
-$github-button: white;
-$github-text: black;
-
-// mobile container colors
-$mobile-panel-background: #191919;
-$timeline-red: #FA8A87;
-$inspector-teal: #4FF7DE;
-$code-pink: #FA73FA;
-$asset-green: #BAFA98;
-
-$inspector-tab-background: #262626;
-$inspector-tab-background-selected: #303030;
-$inspector-tab-underline: #484747;
-
-// Set editor styles.
-a:link {
-  color: $editor-green-highlight;
-}
-
-a:hover {
-  color: $editor-green-highlight-dark;
-}
-
-a {
-  color: $editor-green-highlight;
-}
-
-a:hover {
-  color: $editor-green-highlight-dark;
-}
-
-// React Modal Smooth Transition In-Out
-.ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-
-.ReactModal__Overlay--after-open{
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close{
-  opacity: 0;
-}
-
-// Modal body and overlay information.
 .modal-body {
-  border-radius: 4px;
+  border-radius: 16px;
   background-color: $editor-modal-gray;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  // overflow: hidden;
-  font-family: 'Nunito Sans';
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 0 rgba(255, 72, 0, .9);
 }
 
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.6);
-}
-
-.mobile-menu-overlay {
-  background-color: rgba(48, 48, 48, 0.95);
-}
+.modal-overlay { background-color: rgba(0, 0, 0, .8); }
 
 .wick-brand-arrow {
   border: solid $wick-green;
-  border-width: 0 3px 3px 0;
-  border-radius: 2px; 
+  border-width: 0 5px 5px 0;
+  border-radius: 3px;
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   margin: 4px;
 }
+.arrow-right { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+.arrow-left { transform: rotate(135deg); -webkit-transform: rotate(135deg); }
+.arrow-up { transform: rotate(-135deg); -webkit-transform: rotate(-135deg); }
+.arrow-down { transform: rotate(45deg); -webkit-transform: rotate(45deg); }
 
-.arrow-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
+.btn-wick-warning { background: $interface-warning-dark; border-color: $interface-warning-dark; color: #111; }
+.btn-wick-accept { background: $wick-green-dark; border-color: $wick-green-dark; color: #111; }
 
-.arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.arrow-up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.arrow-down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-// define Bootstrap 4 button Mixins
-/*button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))*/
-.btn-wick-warning {
-  background: $interface-warning-dark;
-  border: $interface-warning-dark;
-  color: #000;
-}
-.btn-wick-warning:hover {
-  background: darken($interface-warning-dark, 7.5%);
-  border: darken($interface-warning-dark, 7.5%);
-}
-.btn-wick-warning:active {
-  background: darken($interface-warning-dark, 12.5%);
-  border: darken($interface-warning-dark, 12.5%);
-}
-
-.btn-wick-accept {
-  background: $wick-green-dark;
-  border: $wick-green-dark;
-  color: #000;
-}
-.btn-wick-accept:hover {
-  background: darken($wick-green-dark, 7.5%);
-  border: darken($wick-green-dark, 7.5%);
-}
-.btn-wick-accept:active {
-  background: darken($wick-green-dark, 12.5%);
-  border: darken($wick-green-dark, 12.5%);
-}
-// define interface element properties
 $splitter-size: calc(#{$editor-outline-padding} / 2);
-$splitter-color: $editor-primary-outline;
-$splitter-highlight-color: $editor-primary-property-text;
+$splitter-color: #ff0055;
+$splitter-highlight-color: #ffe600;
+$interface-roundness-primary: 12px;
+$interface-roundness-secondary: 18px;
+$interface-input-roundness: 14px;
+$docked-title-height: 30px;
+$docked-margin: 8px;
 
-$interface-roundness-primary: 2px;
-$interface-roundness-secondary: 4px;
-$interface-input-roundness: 5px;
-
-$docked-title-height: 26px;
-$docked-margin: 6px;
-
-// Export some colors to be used in JS in some places (canvas, timeline)
-:export {
-  editorCanvasBorder: $editor-canvas-border;
-}
-
-button:focus, input:focus {
-  //We went with outlines to avoid sizing weirdness,
-  //borders may be good to fit around rounded elements, but 
-  //will require some finagling
-  //border: 2px solid $focus-orange !important;
-  //box-sizing: border-box;
-  outline: 2px solid $focus-orange;
-}
-
-.popover.mobile .arrow {
-  display: none;
-  height: 0;
-}
-.mobile.bs-popover-bottom {
-  margin-top: 2px;
-  margin-left: 2px;
-}
+:export { editorCanvasBorder: $editor-canvas-border; }
+button:focus, input:focus { outline: 4px solid $focus-orange; }
+.popover.mobile .arrow { display: none; height: 0; }
+.mobile.bs-popover-bottom { margin-top: 3px; margin-left: 3px; }
