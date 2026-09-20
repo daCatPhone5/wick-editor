@@ -1,6 +1,6 @@
 {
   "short_name": "Wick Editor",
-  "name": "Wick Editor",
+  "name": "Wick Editor - Cheap Android Edition",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ff0055",
+  "background_color": "#ffe600",
+  "orientation": "portrait-primary"
 }
