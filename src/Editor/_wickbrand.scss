@@ -124,35 +124,18 @@ $inspector-tab-underline: #ff4800;
 
 a:link, a { color: $editor-green-highlight; }
 a:hover { color: $editor-green-highlight-dark; }
-
 .ReactModal__Overlay { opacity: 0; transition: opacity .5s ease-in-out; }
 .ReactModal__Overlay--after-open { opacity: 1; }
 .ReactModal__Overlay--before-close { opacity: 0; }
-
-.modal-body {
-  border-radius: 16px;
-  background-color: $editor-modal-gray;
-  box-shadow: 8px 8px 0 rgba(255, 72, 0, .9);
-}
-
+.modal-body { border-radius: 16px; background-color: $editor-modal-gray; box-shadow: 8px 8px 0 rgba(255, 72, 0, .9); }
 .modal-overlay { background-color: rgba(0, 0, 0, .8); }
-
-.wick-brand-arrow {
-  border: solid $wick-green;
-  border-width: 0 5px 5px 0;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 5px;
-  margin: 4px;
-}
+.wick-brand-arrow { border: solid $wick-green; border-width: 0 5px 5px 0; border-radius: 3px; display: inline-block; padding: 5px; margin: 4px; }
 .arrow-right { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
 .arrow-left { transform: rotate(135deg); -webkit-transform: rotate(135deg); }
 .arrow-up { transform: rotate(-135deg); -webkit-transform: rotate(-135deg); }
 .arrow-down { transform: rotate(45deg); -webkit-transform: rotate(45deg); }
-
 .btn-wick-warning { background: $interface-warning-dark; border-color: $interface-warning-dark; color: #111; }
 .btn-wick-accept { background: $wick-green-dark; border-color: $wick-green-dark; color: #111; }
-
 $splitter-size: calc(#{$editor-outline-padding} / 2);
 $splitter-color: #ff0055;
 $splitter-highlight-color: #ffe600;
@@ -161,8 +144,21 @@ $interface-roundness-secondary: 18px;
 $interface-input-roundness: 14px;
 $docked-title-height: 30px;
 $docked-margin: 8px;
-
 :export { editorCanvasBorder: $editor-canvas-border; }
 button:focus, input:focus { outline: 4px solid $focus-orange; }
 .popover.mobile .arrow { display: none; height: 0; }
 .mobile.bs-popover-bottom { margin-top: 3px; margin-left: 3px; }
+
+/* Cheap Android app polish: deliberately overdone controls and panels. */
+button, .btn, input, select, textarea {
+  border-radius: 14px !important;
+  border: 3px solid #111 !important;
+  box-shadow: 4px 4px 0 #ff0055 !important;
+  min-height: 42px;
+  font-weight: 900 !important;
+}
+button:hover, .btn:hover { transform: translate(2px, 2px) rotate(-1deg); }
+.panel, .docked-panel, .inspector, .outliner, .timeline, .toolbox {
+  border: 4px solid #ff7b00 !important;
+  background: linear-gradient(135deg, #252525 0%, #3d2600 100%) !important;
+}
